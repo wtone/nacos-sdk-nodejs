@@ -42,6 +42,9 @@ const client = new NacosNamingClient({
   logger,
   serverList: '127.0.0.1:8848', // replace to real nacos serverList
   namespace: 'public',
+  //nacos username&password if not null string will login with username and password to get accessToken and use it for api
+  username:'',
+  password:''
 });
 await client.ready();
 
@@ -81,6 +84,15 @@ const configClient = new NacosConfigClient({
   namespace: '***************',
   accessKey: '***************',
   secretKey: '***************',
+  requestTimeout: 6000,
+});
+
+// for find username&password mode
+const configClient = new NacosConfigClient({
+  serverAddr: '127.0.0.1:8848',
+  namespace: '***************',
+  username: '***************',
+  password: '***************',
   requestTimeout: 6000,
 });
 
