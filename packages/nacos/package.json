@@ -44,11 +44,11 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/nacos-group/nacos-sdk-nodejs.git"
+		"url": "git+https://github.com/wtone/nacos-sdk-nodejs.git"
 	},
 	"license": "Apache",
 	"bugs": {
-		"url": "https://github.com/nacos-group/nacos-sdk-nodejs/issues"
+		"url": "https://github.com/wtone/nacos-sdk-nodejs/issues"
 	},
-	"homepage": "https://github.com/nacos-group/nacos-sdk-nodejs#readme"
+	"homepage": "https://github.com/wtone/nacos-sdk-nodejs#readme"
 }
