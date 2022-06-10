@@ -19,6 +19,15 @@ const configClient = new NacosConfigClient({
   requestTimeout: 6000, // 请求超时时间，默认6s
 });
 
+// 下面代码是账密模式
+const configClient = new NacosConfigClient({
+  serverAddr: '127.0.0.1:8848',
+  namespace: '***************',
+  username: '***************',
+  password: '***************',
+  requestTimeout: 6000,
+});
+
 // 下面的代码是直连模式
 const configClient = new NacosConfigClient({
   serverAddr: '127.0.0.1:8848', // 对端的 ip 和端口，其他参数同寻址模式
