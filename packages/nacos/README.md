@@ -42,6 +42,9 @@ const client = new NacosNamingClient({
   logger,
   serverList: '127.0.0.1:8848', // replace to real nacos serverList
   namespace: 'public',
+  //nacos username&password if not null string will login with username and password to get accessToken and use it for api
+  username:'',
+  password:''
 });
 await client.ready();
 
@@ -81,6 +84,15 @@ const configClient = new NacosConfigClient({
   namespace: '***************',
   accessKey: '***************',
   secretKey: '***************',
+  requestTimeout: 6000,
+});
+
+// for find username&password mode
+const configClient = new NacosConfigClient({
+  serverAddr: '127.0.0.1:8848',
+  namespace: '***************',
+  username: '***************',
+  password: '***************',
   requestTimeout: 6000,
 });
 
@@ -176,6 +188,10 @@ default value: [ClientOptions default value](https://github.com/nacos-group/naco
 Please let us know how can we help. Do check out [issues](https://github.com/nacos-group/nacos-sdk-nodejs/issues) for bug reports or suggestions first.
 
 PR is welcome.
+
+nacos-sdk-nodejs ding group ： 44654232
+![image](https://user-images.githubusercontent.com/17695352/172582005-c661e2a0-49fa-425c-bf99-785bb7cd4dc1.png)
+
 
 ## License
 
