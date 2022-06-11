@@ -13,7 +13,7 @@
 [david-url]: https://david-dm.org/nacos-group/nacos-sdk-nodejs
 
 
-[Nacos](https://nacos.io/en-us/) Node.js SDK
+[Nacos](https://nacos.io/en-us/) Node.js SDK With Simple Auth Check Mode(Username+Password)
 
 ## Install
 
